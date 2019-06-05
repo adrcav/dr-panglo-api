@@ -7,7 +7,7 @@ module.exports = {
   },
 
   async getAllMessages() {
-    const messages = await Message.find({}).sort({ date: 'desc' });
+    const messages = await Message.find({}).sort({ increment: 'desc' });
     return messages;
   },
 
